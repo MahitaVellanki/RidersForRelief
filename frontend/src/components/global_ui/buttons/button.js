@@ -7,7 +7,8 @@ function Button({
     text,fontSize,
     customClass,
     borderColor,borderWidth,
-    onClick
+    onClick,
+    icon,iconPosition
     }) {
     return (
         <button
@@ -30,7 +31,13 @@ function Button({
         }}
         className={customClass}
         >
+        {
+            iconPosition=="left"?<i className={icon} style={{marginRight:'5px'}}></i>:null
+        }
         { text}
+        {
+            iconPosition=="right"?<i className={icon} style={{marginLeft:'5px'}}></i>:null
+        }
         </button>
     )
 }

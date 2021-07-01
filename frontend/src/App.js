@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import { AuthProvider } from './components/context/auth/authProvider';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from "react-router-dom";
+// import { AuthProvider } from './components/context/auth/authProvider';
 
-import InitialHomeRouting from './components/home/initial_home/initialHomeRouting';
-// import Test from './components/requester/profile/editRequesterProfile'
+// import InitialHomeRouting from './components/home/initial_home/initialHomeRouting';
+import Test from './components/rider/current_request/currentRequest'
 
 function App() {
   //todo
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">   
 
-      <AuthProvider>
+      {/* <AuthProvider>
         <Router>
           <Switch>
           
@@ -28,8 +28,8 @@ function App() {
             </Route>
           </Switch>
         </Router>
-      </AuthProvider>
-      {/* <Test/> */}
+      </AuthProvider> */}
+      <Test/>
 
     </div>
   );
